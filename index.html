@@ -8,11 +8,15 @@
 	body { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background: skyblue; }
 	div { height: 100%; max-width: 512px; max-height: 768px; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
 	img { image-rendering: pixelated; image-rendering: crisp-edges; }
+	form { display: flex; align-items: center; }
+	input[type=text] { width: auto; font-size: inherit; flex-grow: 1; }
+	input[type=submit] { font-size: inherit; }
 </style>
 </head>
 <body>
 <div>
-<p><img src="kite.gif" width="512" height="512" alt="Kite" /></p>
+<p><img src="kite.gif?{{.Color}}" width="512" height="512" alt="Kite" /></p>
+<form><input type="text" name="feelings" value="{{.Feelings}}" autofocus placeholder="Write your feelings..."><input type="submit" value="Change colour!"></form>
 </div>
 </body>
 </html>
