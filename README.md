@@ -1,5 +1,5 @@
 # Hashikite
 
-Hashing feelings into kites. Coming soon.
+Hashing feelings into kites.
 
-![Underwhelming landing page](https://user-images.githubusercontent.com/14028/85379058-a95a5e00-b57e-11ea-91ef-7567321deab4.png)
+![Write your feelings...](https://user-images.githubusercontent.com/14028/85379185-d27aee80-b57e-11ea-82a0-ce5c19def1ce.png)
