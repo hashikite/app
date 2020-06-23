@@ -1,0 +1,14 @@
+steps:
+- label: ":docker: Build"
+  command: |
+    docker build -t "$ECR_URL" .
+    docker push "$ECR_URL"
+
+- wait
+
+- label: ":rocket: Deploy"
+  branch_configuration: master
+  command: |
+    aws ecs update-service --cluster "$ECS_CLUSTER" --service "$ECS_SERVICE" --force-new-deployment
+  agents:
+    queue: ops
